@@ -33,6 +33,7 @@ header{
     justify-content: space-between;
     z-index: 1000;
     box-shadow: var(--box-shadow);
+    background: #fff;
 }
  
 header .logo{
@@ -444,8 +445,54 @@ section{
 }
 
 
+/* style order section ==== */
+.order form{
+    max-width: 90rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+    border: 0.1rem solid rgba(0,0,0,0.1);
+    background: #fff;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
 
+.order form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.order form .inputBox .input{
+    width: 49%;
+}
+.order form .inputBox .input span{
+    display: block;
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+.order form .inputBox .input input,
+.order form .inputBox .input textarea{
+    background: #eee;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+.order form .inputBox .input input:focus,
+.order form .inputBox .input textarea:focus{
+    border: 0.1rem solid var(--green);
+}
+.order form .inputBox .input textarea{
+    height: 20rem;
+    resize: none;
+}
 
+.order form .btn{
+   margin-top: 0; 
+}
 
 
 
@@ -530,6 +577,9 @@ section{
     }
     .dishes .box-container .box img{
         height: auto;
+        width: 100%;
+    }
+    .order form .inputBox .input{
         width: 100%;
     }
 }
